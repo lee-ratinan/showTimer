@@ -18,6 +18,7 @@
                 dtNow   = new Date();
             if (dtStart > dtNow || dtEnd < dtNow) {
                 $(this).hide();
+				$('#'+settings.wrapper_id).hide();
             } else {
                 var id = $(this).attr('id');
                 calculateTimeDifferent(dtEnd, settings.returnType, id, settings.wrapper_id);
