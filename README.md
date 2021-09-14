@@ -1,14 +1,20 @@
 # showTimer
 
+![GitHub last commit](https://img.shields.io/github/last-commit/lee-ratinan/showTimer)
+![GitHub](https://img.shields.io/github/license/lee-ratinan/showTimer)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/lee-ratinan/showTimer?include_prereleases)
+![GitHub issues](https://img.shields.io/github/issues-raw/lee-ratinan/showTimer)
+![GitHub top language](https://img.shields.io/github/languages/top/lee-ratinan/showTimer)
+
 A jQuery plugin to generate a countdown timer in 2 different formats.
 
 ## Requirements
 
 To use this library, you need to include jQuery library.
 
-## Simple textual timer
+## Simple timer
 
-To generate a simple textual timer (e.g. EXPIRES IN 2d 3h 20m 9s), simply call showTimer function. See example below:
+To generate a simple timer (e.g. EXPIRES IN 2d 3h 20m 9s), simply call showTimer function. See example below:
 
 ```html
 <div id="wrapper">EXPIRES IN <span id="selector" data-start="2018-06-21T00:00:00" data-end="2018-06-29T00:00:00"></span></div>
@@ -20,9 +26,9 @@ $(function () {
 });
 ```
 
-## Boxed timer
+## Timer in Boxes
 
-The same goes to the boxed format. It returns the boxes with days/hours/minutes/seconds inside each box.
+The same goes to the box format. It returns the boxes with days/hours/minutes/seconds inside each box.
 
 ```html
 <div id="wrapper_2">EXPIRES IN <span id="selector2" data-start="2018-06-21T00:00:00" data-end="2018-06-29T00:00:00"></span></div>
@@ -80,20 +86,20 @@ Please note that the HTML attribute overrides the one in jQuery.
 
 ## Localization
 
-In javascritp, you can pass the translated string to replace the default English. Here are some of the translations.
+In javascript, you can pass the translated string to replace the default English. Here are some of the translations.
 
-### Chinese
+### Spanish
 
 ```
 {
-    'local_s_days': '天',
-    'local_s_hrs': '时',
-    'local_s_min': '分',
-    'local_s_sec': '秒',
-    'local_l_days': '天',
-    'local_l_hrs': '时',
-    'local_l_min': '分',
-    'local_l_sec': '秒',
+    'local_s_days': 'd',
+    'local_s_hrs': 'h',
+    'local_s_min': 'm',
+    'local_s_sec': 's',
+    'local_l_days': 'días',
+    'local_l_hrs': 'horas',
+    'local_l_min': 'minutos',
+    'local_l_sec': 'segundos',
 }
 ```
 
@@ -109,5 +115,20 @@ In javascritp, you can pass the translated string to replace the default English
     'local_l_hrs': 'ชั่วโมง',
     'local_l_min': 'นาที',
     'local_l_sec': 'วินาที',
+}
+```
+
+### Chinese
+
+```
+{
+    'local_s_days': '天',
+    'local_s_hrs': '时',
+    'local_s_min': '分',
+    'local_s_sec': '秒',
+    'local_l_days': '天',
+    'local_l_hrs': '时',
+    'local_l_min': '分',
+    'local_l_sec': '秒',
 }
 ```
